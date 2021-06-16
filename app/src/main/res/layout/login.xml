@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Login"
+    android:background="@drawable/back6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your username and \n password to log in!"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textSize="33sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_mail_outline_24"/>
+
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:id="@+id/log_mail"
+                android:textSize="20sp"
+                android:textColor="@color/green"
+                android:hint="E-Mail"
+                android:textColorHint="@color/green"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_lock_open_24"/>
+
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:id="@+id/log_pass"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error1"
+            android:text="Wrong e-mail or password! Try again."
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="13sp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:id="@+id/log"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="130dp"
+            app:backgroundTint="@color/blue2"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="login"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/under1"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/blue1"
+            android:textSize="16sp"
+            android:onClick="toRegister"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
